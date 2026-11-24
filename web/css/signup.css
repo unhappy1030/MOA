@@ -1,3 +1,5 @@
 /* 이 파일이 하는 일: 회원가입 화면 전용 스타일 (공통 스타일은 base.css) */
-.signup-page form { margin-bottom: 16px; }
-.signup-page form button { width: 100%; margin-top: 4px; }
+.signup-page { padding-top: 24px; }
+.signup-page h1 { font-size: 44px; }
+.signup-page form button { width: 100%; margin-top: 8px; }
+.signup-page p { margin-top: 32px; color: var(--text-2); }

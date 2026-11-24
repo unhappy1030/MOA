@@ -1,3 +1,5 @@
 /* 이 파일이 하는 일: 로그인 화면 전용 스타일 (공통 스타일은 base.css) */
-.login-page form { margin-bottom: 16px; }
-.login-page form button { width: 100%; margin-top: 4px; }
+.login-page { padding-top: 24px; }
+.login-page h1 { font-size: 44px; }
+.login-page form button { width: 100%; margin-top: 8px; }
+.login-page p { margin-top: 32px; color: var(--text-2); }
