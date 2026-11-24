@@ -1,5 +1,10 @@
-/* 이 파일이 하는 일: groups 화면 전용 스타일 (공통 스타일은 base.css) */
-.group-list { list-style: none; padding: 0; margin: 0; }
-.group-list a { display: block; padding: 12px 14px; margin-bottom: 8px; background: #fff; border: 1px solid #e2e0d8; border-radius: 8px; text-decoration: none; overflow-wrap: anywhere; }
+/* 이 파일이 하는 일: 내 그룹 화면 전용 스타일 — iOS 설정 앱 같은 묶음 목록 */
+.group-list { list-style: none; padding: 0; margin: 0 0 8px; background: var(--card); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+.group-list li + li { border-top: 1px solid var(--line); margin-left: 16px; }
+.group-list a { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 48px; padding: 10px 16px 10px 0; color: var(--text); text-decoration: none; overflow-wrap: anywhere; }
+.group-list li:first-child a { padding-left: 16px; margin-left: 0; }
+.group-list li:first-child { margin-left: 0; }
+.group-list a::after { content: "\203A"; color: var(--text-2); font-size: 24px; line-height: 1; }
 .groups-page form { display: flex; gap: 8px; }
 .groups-page form input { margin: 0; flex: 1; min-width: 0; }
+.groups-page .empty { margin: 0 0 8px; }

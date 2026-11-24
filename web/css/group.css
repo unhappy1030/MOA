@@ -1,3 +1,3 @@
-/* 이 파일이 하는 일: group 화면 전용 스타일 (공통 스타일은 base.css) */
-.group-page .code { font-family: monospace; font-weight: 700; letter-spacing: 1px; }
-.group-page .members { margin: 0 0 8px; color: #555; overflow-wrap: anywhere; }
+/* 이 파일이 하는 일: 그룹 피드 화면 전용 스타일 */
+.group-page .code { display: inline-block; padding: 2px 12px; border-radius: 999px; background: var(--fill); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 600; letter-spacing: .08em; user-select: all; }
+.group-page .members { margin: 0 0 8px; color: var(--text-2); overflow-wrap: anywhere; }

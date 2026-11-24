@@ -1,2 +1,4 @@
-/* 이 파일이 하는 일: write 화면 전용 스타일 (공통 스타일은 base.css) */
-.write-page .share-item { display: flex; align-items: center; gap: 8px; font-weight: 400; margin-bottom: 6px; }
+/* 이 파일이 하는 일: 글쓰기 화면 전용 스타일 */
+.write-page form > button { width: 100%; margin-top: 16px; }
+.write-page .share-item { display: flex; align-items: center; gap: 12px; min-height: 44px; font-weight: 400; font-size: 17px; }
+.write-page .share-item input { width: 22px; height: 22px; margin: 0; accent-color: var(--accent); }
