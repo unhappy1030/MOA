@@ -7,5 +7,6 @@ export async function render(container, params) {
   const entries = await listMyEntries();
   container.append(
     el('h1', {}, '내 일기'),
-    entries.length ? entries.map(entryCard) : el('p', { class: 'empty' }, '아직 쓴 글이 없어요.'));
+    // container.append 는 배열을 못 받으므로 el 로 감싼다
+    el('div', { class: 'feed' }, entries.length ? entries.map(entryCard) : el('p', { class: 'empty' }, '아직 쓴 글이 없어요.')));
 }

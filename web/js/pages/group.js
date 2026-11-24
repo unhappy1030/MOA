@@ -16,5 +16,5 @@ export async function render(container, params) {
     el('p', {}, '초대 코드: ', el('span', { class: 'code' }, group.invite_code)),
     el('p', { class: 'members' }, '멤버: ', group.members.map((m) => m.display_name).join(', ')),
     el('h2', {}, '공유된 글'),
-    feed);
+    el('div', { class: 'feed' }, feed)); // container.append 는 배열을 못 받으므로 el 로 감싼다
 }
