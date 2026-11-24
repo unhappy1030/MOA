@@ -1,0 +1,26 @@
+# deps / build
+node_modules/
+dist/
+
+# env (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# netlify / supabase local
+.netlify/
+supabase/.temp/
+
+# logs
+*.log
+npm-debug.log*
+
+# editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# agent team runtime state
+.agent-mail/
+scripts/agent-team/
