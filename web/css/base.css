@@ -6,6 +6,7 @@
   --text-2: #6B6B6B;       /* 보조 글자 (흰 배경 대비 4.5:1 이상) */
   --line: #EAEAEA;
   --input-bg: #F5F5F5;
+  --input-border: #949494; /* 입력창 테두리 (흰 배경 대비 3:1 이상이라 잘 보임) */
   --btn: #111111;
   --btn-text: #FFFFFF;
   --danger-text: #B3261E;
@@ -19,6 +20,7 @@
     --text-2: #A0A0A0;
     --line: #262626;
     --input-bg: #171717;
+    --input-border: #6B6B6B;
     --btn: #EDEDED;
     --btn-text: #0A0A0A;
     --danger-text: #FF8A82;
@@ -46,7 +48,7 @@ a { color: var(--text); text-underline-offset: 3px; }
 h1 { font-size: 38px; line-height: 1.15; font-weight: 800; letter-spacing: -.035em; margin: 0 0 40px; overflow-wrap: anywhere; }
 h2 { font-size: 13px; font-weight: 600; letter-spacing: .04em; color: var(--text-2); margin: 40px 0 16px; }
 
-input[type=text], input[type=email], input[type=password], textarea { display: block; width: 100%; min-height: 48px; padding: 12px 16px; margin: 8px 0 24px; border: 1px solid transparent; border-radius: 8px; font: inherit; color: var(--text); background: var(--input-bg); outline: none; transition: border-color .15s, box-shadow .15s; }
+input[type=text], input[type=email], input[type=password], textarea { display: block; width: 100%; min-height: 48px; padding: 12px 16px; margin: 8px 0 24px; border: 1px solid var(--input-border); border-radius: 8px; font: inherit; color: var(--text); background: var(--bg); outline: none; transition: border-color .15s; }
 input:focus-visible, textarea:focus-visible { border-color: var(--text); }
 textarea { min-height: 200px; resize: vertical; }
 ::placeholder { color: var(--text-2); opacity: 1; }
