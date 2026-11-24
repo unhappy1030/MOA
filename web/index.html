@@ -19,13 +19,16 @@
 <body>
   <!-- 로그인한 뒤에만 보인다 (main.js 가 hidden 을 켜고 끈다) -->
   <nav id="topbar" hidden>
+   <div class="topbar-inner">
     <a href="#/groups" class="brand">MOA</a>
     <a href="#/groups">내 그룹</a>
     <a href="#/my">내 일기</a>
     <a href="#/write">글쓰기</a>
     <button id="logout-btn" type="button">로그아웃</button>
+   </div>
   </nav>
   <main id="app"></main>
+  <footer class="site-footer">MOA 공유 다이어리</footer>
   <script type="module" src="js/main.js"></script>
 </body>
 </html>

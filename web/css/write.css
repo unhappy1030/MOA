@@ -1,4 +1,7 @@
-/* 이 파일이 하는 일: 글쓰기 화면 전용 스타일 */
+/* 이 파일이 하는 일: 글쓰기 화면 전용 스타일 — 폼 최대 720px, 그룹 체크박스는 여러 열 */
+.write-page form { max-width: 720px; }
 .write-page form > button { width: 100%; margin-top: 32px; }
+.write-page form { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); column-gap: 24px; }
+.write-page form > :not(.share-item) { grid-column: 1 / -1; }
 .write-page .share-item { display: flex; align-items: center; gap: 12px; min-height: 44px; font-weight: 400; font-size: 17px; }
-.write-page .share-item input { width: 22px; height: 22px; margin: 0; accent-color: var(--accent); }
+.write-page .share-item input { width: 22px; height: 22px; margin: 0; accent-color: var(--text); }

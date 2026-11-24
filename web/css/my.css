@@ -1,2 +1,4 @@
-/* 이 파일이 하는 일: 내 일기 화면 전용 스타일 */
+/* 이 파일이 하는 일: 내 일기 화면 전용 스타일 — 읽기 좋은 폭 720px, 왼쪽 정렬 */
+.my-page .feed { max-width: 720px; border-top: 1px solid var(--line); }
+.my-page .feed .card:first-child { padding-top: 32px; }
 .my-page .empty { margin: 0; }
